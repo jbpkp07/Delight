@@ -1,0 +1,26 @@
+{
+    "name": "delight",
+    "version": "1.0.0",
+    "description": "A social site targeted towards pairing friends with similar interests",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jbpkp07/Delight.git"
+    },
+    "author": "Martell Harding, Jeremy Barnes, Griffin Sprague-Dixon",
+    "license": "ISC",
+    "homepage": "https://github.com/jbpkp07/Delight#readme",
+    "dependencies": {
+        "bcrypt": "^3.0.6",
+        "dotenv": "^8.1.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "mysql2": "^1.7.0",
+        "sequelize": "^5.19.1",
+        "socket.io": "^2.3.0",
+        "terminal-kit": "^1.31.4"
+    }
+}

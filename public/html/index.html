@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Delight v1.1</title>
+
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/slick.min.js" type="text/javascript"></script>
+    <script src="../js/fullclip.js" type="text/javascript"></script>
+    <script src="../js/ViewController.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <link rel="preload" as="image" href="../img/blue.jpg">
+    <link rel="preload" as="image" href="../img/green.jpg">
+    <link rel="preload" as="image" href="../img/orange.jpg">
+    <link rel="preload" as="image" href="../img/pink.jpg">
+    <link rel="preload" as="image" href="../img/white.jpg">
+    <link rel="preload" as="image" href="../img/yellow.jpg">
+  
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="fullBackground"></div>
+    </section>
+
+    <div class="fixed-top">
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="delightLogo" src="../img/delightTrans.png" alt="Delight">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a id="about" class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="screenWrapper">
+        <div id="screen" class="screenCollapsed">
+            <div id="welcomeScreen">
+                <span id=titleText>Connection is Delightful</span>
+                <div id="description">You have interests, passions, and things that bring you joy.
+                    Here you get to connect with those who share your same Delights.</div>
+                <div id="loginBtns">
+                    <span id="startLoginBTN" class="BTN">Login</span>
+                    <span id="startSignupBTN" class="BTN">Sign Up</span>
+                </div>
+            </div>
+            <div id="loginScreen" class="hidden">
+                <div id="accountActionText">Please Login</div>
+                <form>
+                    <input id="nameLogin" class="formInput" type="text" placeholder="Name (required)" spellcheck="false" autocomplete="off" required>
+                    <input id="passwordLogin" class="formInput" type="password" placeholder="Password (required)" spellcheck="false" autocomplete="off" required>
+                    <button id="loginBTN" class="BTN" type="submit">Login</button>
+                </form>
+            </div>
+            <div id="signupScreen" class="hidden">
+                <div id="accountActionText">Please Sign Up</div>
+                <form>
+                    <input id="nameSignup" class="formInput" type="text" placeholder="Name (required)" spellcheck="false" autocomplete="off" required>
+                    <input id="passwordSignup" class="formInput" type="password" placeholder="Password (required)" spellcheck="false" autocomplete="off" required>
+                    <button id="signupBTN" class="BTN" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="centeredScreen" class="hidden">
+        <div id="questions" class="hidden">
+            <div id="questionSlides" class="single-item"></div>
+        </div>
+        <div id="chatPortal" class="hidden">
+            <div id="chatRooms"></div>
+            <div id="chatSession">
+                <ul id="messages"></ul>
+                <form id="messageForm" action="">
+                    <input id="message" class="formInput" spellcheck="false" autocomplete="off"/>
+                    <button id="submitBtn" class="BTN">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+
+            const viewController = new ViewController();
+        });
+    </script>
+
+</body>
+
+</html>
