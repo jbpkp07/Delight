@@ -35,8 +35,8 @@ This application was developed alongside developers https://github.com/Kalamath 
 
 #### Locally running webserver:
 
-![1](https://github.com/jbpkp07/SequelizedBurger/blob/master/public/assets/images/server.png)
+![1](https://github.com/jbpkp07/Delight/blob/master/public/img/server.png)
 
 #### Hosted website:
 
-![2](https://github.com/jbpkp07/SequelizedBurger/blob/master/public/assets/images/burgers.png)
+![2](https://github.com/jbpkp07/Delight/blob/master/public/img/delight.png)
